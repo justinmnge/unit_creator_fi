@@ -9,6 +9,12 @@ import (
 
 func main() {
 	mux := http.NewServeMux()
+
+	// Serve static files (CSS, images, etc) from the static directory
+	fileServer := http.FileServer(http.Dir("./static"))
+	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
+
+	// Handle the homepage
 	mux.HandleFunc("/", handleHome)
 
 	fmt.Println("Server listening to :8080")
