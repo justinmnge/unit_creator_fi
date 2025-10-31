@@ -1,12 +1,41 @@
-@font-face {
-    font-family: 'BebasNeue';
-    src: url('/static/fonts/BebasNeue-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.container {
+    position: static;
+    vertical-align: middle;
+}
+
+.box {
+    border: 2px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    text-align: center;
 }
 
 body {
-    background-color: red;
+    background-color: black;
     background-image: url('/static/images/BG_photo.png');
     background-size: cover;
     background-position: center;
@@ -14,8 +43,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     min-height: 100vh;
-    font-family: 'BebasNeue', sans-serif;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,13 +52,32 @@ body {
 
 h1 {
     font-size: 80px;
-    font-family: 'BebasNeue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     color: white;
-    margin-bottom: 0;
+    font-weight: 100;
+    margin: 0;
+    letter-spacing: 7px;
 }
 
 h3 {
     font-size: 30px;
-    font-family: 'BebasNeue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     color: white;
+    font-weight: 100;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Open sans", sans-serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0px;
+    border: 5px solid rgb(71,88,96);
+    border-radius: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
