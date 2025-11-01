@@ -1,9 +1,7 @@
-# Unit Portal Creator
+# Unit Portal Creator 🏴‍☠️
 
 <!-- ABOUT THE PROJECT -->
 ## 📌 About this Project
-
-Here's a reworded version for your Unit Portal Creator project:
 
 The goal of this project is to build a comprehensive Unit Portal Creator that integrates with a game API to display real-time player and unit statistics.
 
@@ -69,5 +67,5 @@ Goals of this project:
 
 Justin Monge - hello@justin-monge.dev
 
-Project Link: [https://github.com/justinmnge/Chirpy](https://github.com/justinmnge/Chirpy)
+Project Link: [https://github.com/justinmnge/unit_creator_fi](https://github.com/justinmnge/unit_creator_fi)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
