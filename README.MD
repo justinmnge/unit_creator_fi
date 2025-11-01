@@ -5,7 +5,7 @@
 
 The goal of this project is to build a comprehensive Unit Portal Creator that integrates with a game API to display real-time player and unit statistics.
 
-Goals of this project:
+Key Objectives:
 * Understand what web servers are and how they power real-world web applications
 * Understand how to integrate external game APIs and transform their data into meaningful user experiences
 * Build a production-style HTTP server in Go that serves as the backbone for the unit portal system
