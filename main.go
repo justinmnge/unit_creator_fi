@@ -17,6 +17,9 @@ func main() {
 	// Handle the homepage
 	mux.HandleFunc("/", handleHome)
 
+	// Handle the portal page
+	mux.HandleFunc("/login", handleLogin)
+
 	fmt.Println("Server listening to :8080")
 	err := http.ListenAndServe(":8080", mux)
 	if err != nil {
@@ -26,6 +29,10 @@ func main() {
 
 func handleHome(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "index.html")
+}
+
+func handleLogin(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "login.html")
 }
 
 func renderTemplate(w http.ResponseWriter, tmpl string) {
