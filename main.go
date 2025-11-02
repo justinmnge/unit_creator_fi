@@ -28,7 +28,7 @@ func main() {
 }
 
 func handleHome(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, "index.html")
+	renderTemplate(w, "home.html")
 }
 
 func handleLogin(w http.ResponseWriter, r *http.Request) {

@@ -26,13 +26,26 @@
 	</header>
 	<div class="container">
 		<div class="box">
-			<h1></h1>
-			<h3></h3>
+			<h2>UNIT PORTAL</h2>
+			<form class="login-form" action="/login" method="POST">
+				<div class="form-group">
+					<label for="username">ACCOUNT NAME</label>
+					<input type="text" id="username" name="username" placeholder="Enter your account name" required>
+				</div>
+				<div class="form-group">
+					<label for="password">PASSWORD</label>
+					<input type="password" id="password" name="password" placeholder="Enter your password" required>
+				</div>
+				<div class="button-group">
+					<button type="submit" class="button">
+						<span class="button-text">LOGIN</span>
+					</button>
+					<a href="forgot-password" class="button button-secondary">
+						<span class="button-text">RESET PASSWORD</span>
+					</a>
+				</div>
+			</form>
 		</div>
-		<a href="#" class="button">
-			<span class="button-text">LOGIN</span>
-			<img src="/static/images/login-logo.png" alt="icon" class="button-icon">
-		</a>
 	</div>
 </body>
 </html>
