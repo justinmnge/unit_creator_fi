@@ -23,6 +23,9 @@ func main() {
 	// Handle the trailer page
 	mux.HandleFunc("/trailer", handleTrailer)
 
+	// Handle the contact page
+	mux.HandleFunc("/contact", handleContact)
+
 	fmt.Println("Server listening to :8080")
 	err := http.ListenAndServe(":8080", mux)
 	if err != nil {
@@ -40,6 +43,10 @@ func handleLogin(w http.ResponseWriter, r *http.Request) {
 
 func handleTrailer(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "trailer.html")
+}
+
+func handleContact(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "contact.html")
 }
 
 func renderTemplate(w http.ResponseWriter, tmpl string) {

@@ -136,12 +136,12 @@
 
 body {
     background-color: black;
-    background-image: url('/static/images/login_photo.png');
+    background-image: url('/static/images/Trailer.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0;
+    margin: 50px 0 0 0;
     padding: 0;
     height: 100vh;
 
