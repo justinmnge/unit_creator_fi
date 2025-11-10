@@ -1,3 +1,4 @@
+![CI checks badge](https://github.com/justinmnge/unit_creator_fi/actions/workflows/ci.yml/badge.svg)
 # Unit Portal Creator 🏴‍☠️
 
 <img width="1912" height="908" alt="Image" src="https://github.com/user-attachments/assets/14049d29-0d06-41f7-aae1-419d91f6fb6c" />
@@ -71,4 +72,3 @@ Justin Monge - hello@justin-monge.dev
 
 Project Link: [https://github.com/justinmnge/unit_creator_fi](https://github.com/justinmnge/unit_creator_fi)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-![CI checks badge](https://github.com/justinmnge/unit_creator_fi/actions/workflows/ci.yml/badge.svg)
