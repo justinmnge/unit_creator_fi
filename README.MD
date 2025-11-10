@@ -71,3 +71,4 @@ Justin Monge - hello@justin-monge.dev
 
 Project Link: [https://github.com/justinmnge/unit_creator_fi](https://github.com/justinmnge/unit_creator_fi)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+![CI checks badge](https://github.com/justinmnge/unit_creator_fi/actions/workflows/ci.yml/badge.svg)
