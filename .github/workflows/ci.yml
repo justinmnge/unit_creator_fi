@@ -24,7 +24,7 @@ jobs:
       run: go test -v ./...
 
   styles:
-    name: Formatting checks
+    name: Formatting & linting checks
     runs-on: ubuntu-latest
     
     steps:
@@ -38,3 +38,6 @@ jobs:
 
     - name: Formatting check
       run: test -z $(go fmt ./...)
+
+    - name: Install staticcheck
+      run: go install honnef.co/go/tools/cmd/staticcheck@latest
