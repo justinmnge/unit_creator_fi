@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -13,6 +14,15 @@ func main() {
 	// Serve static files (CSS, images, etc) from the static directory
 	fileServer := http.FileServer(http.Dir("./static"))
 	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
+
+	srv := &http.Server{
+		Addr:              ":8080",
+		Handler:           mux,
+		ReadTimeout:       5 * time.Second,
+		WriteTimeout:      5 * time.Second,
+		IdleTimeout:       30 * time.Second,
+		ReadHeaderTimeout: 2 * time.Second,
+	}
 
 	// Handle the homepage
 	mux.HandleFunc("/", handleHome)
@@ -30,9 +40,9 @@ func main() {
 	mux.HandleFunc("/about", handleAbout)
 
 	fmt.Println("Server listening to :8080")
-	err := http.ListenAndServe(":8080", mux)
+	err := srv.ListenAndServe()
 	if err != nil {
-		log.Fatal(err)
+		fmt.Printf("Server failed: %v\n", err)
 	}
 }
 
@@ -59,7 +69,15 @@ func handleAbout(w http.ResponseWriter, r *http.Request) {
 func renderTemplate(w http.ResponseWriter, tmpl string) {
 	t, err := template.ParseFiles("static/" + tmpl)
 	if err != nil {
+		log.Printf("Error parsing template %s: %v", tmpl, err)
 		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
 	}
-	t.Execute(w, nil)
+
+	err = t.Execute(w, nil)
+	if err != nil {
+		log.Printf("Error executing template %s: %v", tmpl, err)
+		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+		return
+	}
 }
