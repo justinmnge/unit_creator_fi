@@ -11,4 +11,4 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o unit_creator_fi
 
 EXPOSE 8080
 
-CMD ["./main"]
+CMD ["./unit_creator_fi"]

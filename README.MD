@@ -33,15 +33,16 @@ Key Objectives:
 
 ## ✅ Prerequisites
 
-* Install using your terminal to the latest version 
-  ```sh
-  curl -sS https://webi.sh/golang | sh
-  ```
+* Install Docker Desktop for your operating system
+  * [Docker Desktop for Mac](https://docs.docker.com/desktop/install/mac-install/)
+  * [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/)
+  * [Docker Engine for Linux](https://docs.docker.com/engine/install/)
 
 * Verify installation worked
-  ```sh
-  go version
-  ```
+```sh
+  docker --version
+  docker compose version
+```
 
 ## 📦 Installation
 
@@ -49,11 +50,7 @@ Key Objectives:
    ```sh
    git clone https://github.com/justinmnge/unit_creator_fi.git
    ```
-2. Download all dependencies
-   ```sh
-   go mod download
-   ```
-3. Change git remote url to avoid accidental pushes to base project
+2. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
@@ -61,10 +58,25 @@ Key Objectives:
 
 ## ⚙️ Usage
 
-* Run the server
-  ```sh
-  go run .
-  ```
+* Run the server with Docker
+```sh
+  docker compose up
+```
+
+* Run in detached mode (background)
+```sh
+  docker compose up -d
+```
+
+* Stop the server
+```sh
+  docker compose down
+```
+
+* Rebuild after code changes
+```sh
+  docker compose up --build
+```
 
 <!-- CONTACT -->
 ## ℹ️ Contact
