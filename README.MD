@@ -1,6 +1,4 @@
-![CI checks badge](https://github.com/justinmnge/unit_creator_fi/actions/workflows/ci.yml/badge.svg)
-
-![CD checks badge](https://github.com/justinmnge/unit_creator_fi/actions/workflows/cd.yml/badge.svg)
+![CI checks badge](https://github.com/justinmnge/unit_creator_fi/actions/workflows/ci.yml/badge.svg) &nbsp; ![CD checks badge](https://github.com/justinmnge/unit_creator_fi/actions/workflows/cd.yml/badge.svg)
 # Unit Portal Creator 🏴‍☠️
 
 <img width="1912" height="908" alt="Image" src="https://github.com/user-attachments/assets/14049d29-0d06-41f7-aae1-419d91f6fb6c" />
@@ -29,7 +27,7 @@ Key Objectives:
 <p align="left">
  <a href="https://go.dev/"><img src="https://skillicons.dev/icons?i=go"></a>&nbsp;
 <img src="https://skillicons.dev/icons?i=html">&nbsp;
-<img src="https://skillicons.dev/icons?i=css">&nbsp;
+<img src="https://github.com/user-attachments/assets/debd8e54-8d8a-4dc1-b900-0c778af06574" width="48" height="48"></a>&nbsp;
 <img src="https://skillicons.dev/icons?i=docker"></a>&nbsp;
  </p>
 
