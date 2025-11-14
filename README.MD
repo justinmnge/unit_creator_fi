@@ -6,20 +6,16 @@
 <!-- ABOUT THE PROJECT -->
 ## 📌 About this Project
 
-The goal of this project is to build a comprehensive Unit Portal Creator that integrates with a game API to display real-time player and unit statistics.
+The goal of this project is to build a comprehensive CRUD application that integrates with a game API to display real-time player and unit statistics, enabling Mil-Sim enthusiasts to create custom unit pages within a tactical gaming community.
 
 Key Objectives:
-* Understand what web servers are and how they power real-world web applications
-* Understand how to integrate external game APIs and transform their data into meaningful user experiences
-* Build a production-style HTTP server in Go that serves as the backbone for the unit portal system
-* Implement secure user authentication to gate access to personalized player statistics and unit data
-* Use RESTful API principles with JSON, headers, and status codes to communicate between the game API, backend, and frontend
-* Leverage Go's performance capabilities to handle real-time game data updates efficiently
-* Use type-safe SQL with a Postgres database to store and manage unit emblems, organizational structures, and cached player data
-* Create a secure authorization system that controls access to unit rosters and member information
-* Build API endpoints to support unit emblem creation and customization
-* Design and implement a system to visualize unit organizational hierarchies and command structures
-* Document the API endpoints to enable future expansion and integration possibilities
+* Build a production-grade HTTP server in Go
+* Integrate and transform external game API data into meaningful user experiences
+* Implement secure authentication and authorization for player and unit data
+* Design RESTful APIs using JSON for seamless communication between game API, backend, and frontend
+* Use Postgres with type-safe SQL to store unit emblems, organizational structures, and cached player data
+* Develop endpoints for unit emblem creation, customization, and hierarchy visualization
+* Document APIs to enable future expansion and integration
 
 ## 🛠️ Built With
 
@@ -78,7 +74,6 @@ Key Objectives:
   docker compose up --build
 ```
 
-<!-- CONTACT -->
 ## ℹ️ Contact
 
 Justin Monge - hello@justin-monge.dev
