@@ -70,6 +70,97 @@ body {
     opacity: 1;
 }
 
+/* Footer Styles */
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 30px 50px 20px 50px;
+    z-index: 10;
+    margin-top: auto;
+}
+
+/* Keep footer at bottom for home page */
+body.page-home .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(131, 131, 131, 0.8),
+                 0 0 20px rgba(66, 66, 66, 0.6);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 15px rgba(99, 46, 46, 0.8);
+    opacity: 1;
+}
+
+.footer-separator {
+    width: 90%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 auto 15px auto;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-copyright {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: white;
+    opacity: 0.5;
+    text-shadow: 0 0 10px rgba(131, 131, 131, 0.8);
+}
+
+.footer-nav {
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+
+.footer-nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-nav-link:hover {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(131, 131, 131, 0.8);
+}
+
+.footer-nav-separator {
+    margin: 0 10px;
+    color: white;
+    opacity: 0.7;
+}
+
 /* Container and Box */
 .container {
     display: flex;
@@ -219,6 +310,10 @@ body {
 /* Home Page */
 body.page-home {
     background-image: url('/static/images/BG_photo.png');
+    min-height: 100vh;
+    height: 100vh;
+    justify-content: center;
+    padding-bottom: 0;
 }
 
 body.page-home h1 {
@@ -273,6 +368,10 @@ body.page-home .button:hover {
 /* Login Page */
 body.page-login {
     background-image: url('/static/images/login_photo.png');
+    min-height: 100vh;
+    height: auto;
+    justify-content: flex-start;
+    padding-top: 10px;
 }
 
 body.page-login .box h2 {
@@ -308,6 +407,10 @@ body.page-login .box h2 {
 /* Contact Page */
 body.page-contact {
     background-image: url('/static/images/contact_us.png');
+    min-height: 100vh;
+    height: auto;
+    justify-content: flex-start;
+    padding-top: 10px;
 }
 
 body.page-contact .box h2 {
@@ -337,15 +440,21 @@ body.page-contact .button:hover {
 /* Trailer Page */
 body.page-trailer {
     background-image: url('/static/images/Trailer.png');
+    min-height: 100vh;
+    height: auto;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-bottom: 50px;
     margin: 50px 0 0 0;
 }
 
 .video-container {
-    position: absolute;
+    position: relative;
     width: 90vw;
     height: 80vh;
     max-width: 1400px;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .video-container iframe {
@@ -355,4 +464,66 @@ body.page-trailer {
     height: 100%;
     border: none;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* About Page */
+body.page-about {
+	background-image: url('/static/images/about.png');
+	min-height: 100vh;
+	height: auto;
+	justify-content: flex-start;
+	padding-top: 100px;
+}
+
+body.page-about .container {
+	max-width: 1400px;
+	width: 90%;
+	padding: 20px;
+}
+
+body.page-about h1 {
+	font-size: 80px;
+	font-family: "Bebas Neue", sans-serif;
+	color: white;
+	font-weight: 100;
+	margin: 0 0 40px 0;
+	letter-spacing: 7px;
+	text-shadow: 0 0 10px rgba(131, 131, 131, 0.8),
+				 0 0 20px rgba(66, 66, 66, 0.6);
+	text-align: center;
+}
+
+.features-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px;
+	width: 100%;
+}
+
+.feature-item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.feature-item h2 {
+	font-size: 50px;
+	font-family: "Bebas Neue", sans-serif;
+	color: rgba(208, 177, 133);
+	font-weight: 100;
+	margin: 0;
+	letter-spacing: 2px;
+	text-shadow: 0 0 10px rgba(131, 131, 131, 0.8),
+				 0 0 20px rgba(66, 66, 66, 0.6);
+	text-align: center;
+}
+
+.feature-item p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: white;
+	text-shadow: 0 0 10px rgba(131, 131, 131, 0.8),
+				 0 0 20px rgba(66, 66, 66, 0.6);
+	margin: 0;
+	line-height: 1.6;
 }
