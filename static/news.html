@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fieldcraft Interactive - News</title>
+	<link rel="stylesheet" href="/static/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" type="image/png"sizes="180x180" href="/static/images/apple-touch-icon.png">
+	<link rel="android-chrome-192x192" type="image/png" sizes="180x180" href="/static/images/android-chrome-192x192.png">
+	<link rel="android-chrome-512x512" type="image/png" sizes="180x180" href="/static/images/android-chrome-512x512.png">
+</head>
+<body class="page-news">
+	<header class="header">
+		<a href="home">
+			<img src="/static/images/dark-logo.png" alt="Fieldcraft Interactive Logo" class="brand-logo">
+		</a>
+		<nav class="header-nav">
+			<a href="about" class="nav-link">ABOUT</a>
+            <a href="news" class="nav-link">NEWS</a>
+			<a href="contact" class="nav-link">CONTACT</a>
+			<a href="trailer" class="nav-link">TRAILER</a>
+		</nav>
+		<div class="header-icons">
+            <img src="/static/images/unreal-engine-logo.png" alt="Unreal Engine 5" class="header-icon">
+            <a href="login" class="header-icon-link">
+                <img src="/static/images/account_icon.png" alt="Account" class="header-icon">
+            </a>
+        </div>
+	</header>
+
+	<div class="container">
+		<h1>LATEST NEWS</h1>
+		
+		<div class="news-layout">
+			<!-- Main Featured Card -->
+			<div class="main-card-wrapper">
+				<a href="https://www.instagram.com/fieldcraft.interactive/" target="_blank" class="news-card main-card" style="background-image: url('/static/images/card1.png');">
+					<div class="card-platform">INSTAGRAM</div>
+					<div class="card-overlay">
+						<h2 class="card-title">LATEST DEVELOPMENT UPDATE</h2>
+						<p class="card-date">November 15, 2025</p>
+					</div>
+				</a>
+			</div>
+
+			<!-- Vertical Separator -->
+			<div class="vertical-separator"></div>
+
+			<!-- Carousel Cards -->
+			<div class="carousel-wrapper">
+				<button class="carousel-nav carousel-nav-left" onclick="scrollCarousel(-1)">
+					<span>‹</span>
+				</button>
+				
+				<div class="carousel-container" id="carousel">
+					<a href="https://www.youtube.com/@Fieldcraft_Interactive" target="_blank" class="news-card carousel-card" style="background-image: url('/static/images/card2.png');">
+						<div class="card-platform">YOUTUBE</div>
+						<div class="card-overlay">
+							<h2 class="card-title">NEW GAMEPLAY TRAILER</h2>
+							<p class="card-date">November 10, 2025</p>
+						</div>
+					</a>
+
+					<a href="https://discord.gg/qQctmPA678" target="_blank" class="news-card carousel-card" style="background-image: url('/static/images/card3.png');">
+						<div class="card-platform">DISCORD</div>
+						<div class="card-overlay">
+							<h2 class="card-title">COMMUNITY EVENT ANNOUNCED</h2>
+							<p class="card-date">November 5, 2025</p>
+						</div>
+					</a>
+
+					<a href="https://www.reddit.com/r/FieldcraftInteractive/" target="_blank" class="news-card carousel-card" style="background-image: url('/static/images/card4.png');">
+						<div class="card-platform">REDDIT</div>
+						<div class="card-overlay">
+							<h2 class="card-title">AMA WITH DEVELOPERS</h2>
+							<p class="card-date">November 1, 2025</p>
+						</div>
+					</a>
+
+					<a href="https://www.instagram.com/fieldcraft.interactive/" target="_blank" class="news-card carousel-card" style="background-image: url('/static/images/news-5.jpg');">
+						<div class="card-platform">INSTAGRAM</div>
+						<div class="card-overlay">
+							<h2 class="card-title">BEHIND THE SCENES</h2>
+							<p class="card-date">October 28, 2025</p>
+						</div>
+					</a>
+
+					<a href="https://www.youtube.com/@Fieldcraft_Interactive" target="_blank" class="news-card carousel-card" style="background-image: url('/static/images/news-6.jpg');">
+						<div class="card-platform">YOUTUBE</div>
+						<div class="card-overlay">
+							<h2 class="card-title">WEAPON SHOWCASE</h2>
+							<p class="card-date">October 20, 2025</p>
+						</div>
+					</a>
+
+					<a href="https://discord.gg/qQctmPA678" target="_blank" class="news-card carousel-card" style="background-image: url('/static/images/news-7.jpg');">
+						<div class="card-platform">DISCORD</div>
+						<div class="card-overlay">
+							<h2 class="card-title">WEEKEND PLAYTEST</h2>
+							<p class="card-date">October 15, 2025</p>
+						</div>
+					</a>
+				</div>
+
+				<button class="carousel-nav carousel-nav-right" onclick="scrollCarousel(1)">
+					<span>›</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+        <div class="footer-links">
+            <a href="https://discord.gg/qQctmPA678" target="_blank" class="footer-link">DISCORD</a>
+            <a href="https://www.youtube.com/@Fieldcraft_Interactive" target="_blank" class="footer-link">YOUTUBE</a>
+            <a href="https://www.instagram.com/fieldcraft.interactive/?hl=en" target="_blank" class="footer-link">INSTAGRAM</a>
+            <a href="https://www.reddit.com/r/FieldcraftInteractive/" target="_blank" class="footer-link">REDDIT</a>
+            <a href="https://facebook.com/your-facebook" target="_blank" class="footer-link">FACEBOOK</a>
+            <a href="https://linkedin.com/company/your-company" target="_blank" class="footer-link">LINKEDIN</a>
+        </div>
+        <div class="footer-separator"></div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">All Rights Reserved © Fieldcraft Interactive.</div>
+            <nav class="footer-nav">
+                <a href="privacy-policy" class="footer-nav-link">Privacy Policy</a>
+                <span class="footer-nav-separator">|</span>
+                <a href="terms-of-service" class="footer-nav-link">Terms of Service</a>
+                <span class="footer-nav-separator">|</span>
+                <a href="code-of-conduct" class="footer-nav-link">Code of Conduct</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
