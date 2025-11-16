@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -37,6 +38,7 @@ body {
     height: auto;
     opacity: 0.9;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .brand-logo:hover {
@@ -45,18 +47,10 @@ body {
 
 .header-nav {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 43%;
     display: flex;
     gap: 30px;
     align-items: center;
-}
-
-.header-icons {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-left: auto;
 }
 
 .nav-link {
@@ -81,6 +75,7 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .header-icon {
