@@ -493,7 +493,6 @@ body.page-trailer {
 /* About Page */
 body.page-about {
 	background-image: url('/static/images/about.png');
-	min-height: 100vh;
 	height: auto;
 	justify-content: flex-start;
 	padding-top: 100px;
@@ -503,6 +502,11 @@ body.page-about .container {
 	max-width: 1400px;
 	width: 90%;
 	padding: 20px;
+    margin-bottom: 30px;
+}
+
+body.page-about .footer {
+    margin-top: 30px;
 }
 
 body.page-about h1 {
@@ -510,7 +514,7 @@ body.page-about h1 {
 	font-family: "Bebas Neue", sans-serif;
 	color: white;
 	font-weight: 100;
-	margin: 0 0 40px 0;
+	margin: 0;
 	letter-spacing: 7px;
 	text-shadow: 0 0 10px rgba(131, 131, 131, 0.8),
 				 0 0 20px rgba(66, 66, 66, 0.6);
@@ -522,6 +526,7 @@ body.page-about h1 {
 	grid-template-columns: 1fr 1fr;
 	gap: 40px;
 	width: 100%;
+    margin-bottom: 0;
 }
 
 .feature-item {
@@ -550,4 +555,92 @@ body.page-about h1 {
 				 0 0 20px rgba(66, 66, 66, 0.6);
 	margin: 0;
 	line-height: 1.6;
+}
+
+/* Privacy/TOS/Conduct Page */
+body.page-privacy,
+body.page-tos,
+body.page-conduct {
+	background-image: url('/static/images/footer-links-background.png');
+	height: auto;
+	justify-content: flex-start;
+	padding-top: 100px;
+}
+
+/* Content Box for Privacy/TOS/Conduct Pages */
+body.page-privacy .container,
+body.page-tos .container,
+body.page-conduct .container {
+    max-width: 1400px;
+    width: 90%;
+    padding: 20px;
+}
+
+body.page-privacy .footer,
+body.page-tos .footer,
+body.page-conduct .footer {
+    margin-top: 0;
+}
+
+
+body.page-privacy h1,
+body.page-tos h1,
+body.page-conduct h1 {
+    font-size: 80px;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-weight: 100;
+    margin: 0 0 30px 0;
+    letter-spacing: 7px;
+    text-shadow: 0 0 10px rgba(131, 131, 131, 0.8),
+                 0 0 20px rgba(66, 66, 66, 0.6);
+    text-align: center;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-height: 65vh;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.content-box h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    color: white;
+    font-weight: 100;
+    margin: 25px 0 10px 0;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(131, 131, 131, 0.8),
+                 0 0 20px rgba(66, 66, 66, 0.6);
+}
+
+.content-box p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 10px rgba(131, 131, 131, 0.8),
+                 0 0 20px rgba(66, 66, 66, 0.6);
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+
+.content-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content-box::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.content-box::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.content-box::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
 }

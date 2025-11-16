@@ -36,8 +36,17 @@ func main() {
 	// Handle the contact page
 	mux.HandleFunc("/contact", handleContact)
 
-	// Hanlde the about page
+	// Handle the about page
 	mux.HandleFunc("/about", handleAbout)
+
+	// Handle the privacy policy page
+	mux.HandleFunc("/privacy-policy", handlePrivacy)
+
+	// Handle the terms of service page
+	mux.HandleFunc("/terms-of-service", handleTOS)
+
+	// Handle the code of conduct page
+	mux.HandleFunc("/code-of-conduct", handleConduct)
 
 	fmt.Println("Server listening to :8080")
 	err := srv.ListenAndServe()
@@ -64,6 +73,18 @@ func handleContact(w http.ResponseWriter, r *http.Request) {
 
 func handleAbout(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "about.html")
+}
+
+func handlePrivacy(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "privacy.html")
+}
+
+func handleTOS(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "tos.html")
+}
+
+func handleConduct(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "conduct.html")
 }
 
 func renderTemplate(w http.ResponseWriter, tmpl string) {
