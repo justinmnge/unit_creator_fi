@@ -48,6 +48,9 @@ func main() {
 	// Handle the code of conduct page
 	mux.HandleFunc("/code-of-conduct", handleConduct)
 
+	// Handle the news page
+	mux.HandleFunc("/news", handleNews)
+
 	fmt.Println("Server listening to :8080")
 	err := srv.ListenAndServe()
 	if err != nil {
@@ -85,6 +88,10 @@ func handleTOS(w http.ResponseWriter, r *http.Request) {
 
 func handleConduct(w http.ResponseWriter, r *http.Request) {
 	renderTemplate(w, "conduct.html")
+}
+
+func handleNews(w http.ResponseWriter, r *http.Request) {
+	renderTemplate(w, "news.html")
 }
 
 func renderTemplate(w http.ResponseWriter, tmpl string) {
