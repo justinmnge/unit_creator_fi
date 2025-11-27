@@ -23,16 +23,16 @@ Unit Creator FI is a web platform for milsim and tactical gaming communities to 
 <img src="https://skillicons.dev/icons?i=docker"></a>&nbsp;
  </p>
 
-## 🔧 Technical Stack
+### 🔧 Technical Stack
 * Backend: Go HTTP server with PostgreSQL for persistent storage
 * Authentication: Secure player and unit data access controls
 * Deployment: Docker containerization with planned GCP/Kubernetes scaling
 * API Design: RESTful endpoints with comprehensive documentation for third-party integration
 
-## 📍 Current Status: Phase 1 (View-Only)
+### 📍 Current Status: Phase 1 (View-Only)
 This is currently a showcase platform with manually curated content. User-generated unit creation will be available in Phase 2.
 
-## 🛣️ Roadmap
+### 🛣️ Roadmap
 * Phase 1: Static JSON data with manual curation
 * Phase 2: Database-backed system with user-generated content
 * Phase 3: Real-time game server integration for live player statistics
