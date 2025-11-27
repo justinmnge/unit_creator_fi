@@ -8,7 +8,7 @@
 
 Unit Creator FI is a web platform for Mil-Sim and tactical gaming communities to build authentic unit identities, manage rosters, and showcase organizational structure.
 
-### The Problem It Solves
+### Motivation
 Mil-Sim enthusiasts and tactical gaming units currently juggle Discord channels, Google Sheets, and forum posts to maintain their organizational identity. Unit Creator centralizes this into a single, professional platform with proper data persistence and a clean presentation layer.
 
 ### What it does:
@@ -68,7 +68,7 @@ This is currently a showcase platform with manually curated content. User-genera
   docker compose version
 ```
 
-## 📦 Installation
+## 📦 Quickstart
 
 ### Run Pre-built Docker Image
 
@@ -120,6 +120,28 @@ After running the server, visit `http://localhost:8080` to browse:
 ```sh
   docker run -p 8080:8080 justinmnge/unit_creator_fi:COMMIT_SHA
 ```
+
+## 🤝 Contributing
+
+### Clone the repo
+```bash
+git clone https://github.com/justinmnge/unit_creator_fi
+cd unit_creator_fi
+```
+
+### Build the compiled binary
+```bash
+go build
+```
+
+### Run the test suite
+```bash
+go test ./...
+```
+
+### Submit a pull request
+
+If you'd like to contribute, please fork the repository and open a pull request to the `main` branch.
 
 ## 🐳 Docker Hub
 
