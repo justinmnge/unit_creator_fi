@@ -6,7 +6,10 @@
 <!-- ABOUT THE PROJECT -->
 ## 📌 About this Project
 
-Unit Creator FI is a web platform for milsim and tactical gaming communities to build authentic unit identities, manage rosters, and showcase organizational structure.
+Unit Creator FI is a web platform for Mil-Sim and tactical gaming communities to build authentic unit identities, manage rosters, and showcase organizational structure.
+
+### The Problem It Solves
+Mil-Sim enthusiasts and tactical gaming units currently juggle Discord channels, Google Sheets, and forum posts to maintain their organizational identity. Unit Creator centralizes this into a single, professional platform with proper data persistence and a clean presentation layer.
 
 ### What it does:
 * Enables communities to create custom unit pages with emblems, hierarchy, and member profiles
@@ -17,17 +20,29 @@ Unit Creator FI is a web platform for milsim and tactical gaming communities to 
 ## 🛠️ Built With
 
 <p align="left">
- <a href="https://go.dev/"><img src="https://skillicons.dev/icons?i=go"></a>&nbsp;
+<img src="https://skillicons.dev/icons?i=go"></a>&nbsp;
+<img src="https://skillicons.dev/icons?i=ts"></a>&nbsp;
 <img src="https://skillicons.dev/icons?i=html">&nbsp;
 <img src="https://github.com/user-attachments/assets/debd8e54-8d8a-4dc1-b900-0c778af06574" width="48" height="48"></a>&nbsp;
+<img src="https://skillicons.dev/icons?i=react"></a>&nbsp;
 <img src="https://skillicons.dev/icons?i=docker"></a>&nbsp;
- </p>
+<img src="https://skillicons.dev/icons?i=postgres"></a>&nbsp;
+</p>
 
 ### 🔧 Technical Stack
-* Backend: Go HTTP server with PostgreSQL for persistent storage
-* Authentication: Secure player and unit data access controls
-* Deployment: Docker containerization with planned GCP/Kubernetes scaling
-* API Design: RESTful endpoints with comprehensive documentation for third-party integration
+
+**Backend**
+* **Go HTTP server** - Chosen for reliable concurrent request handling, simple deployment (single binary), and excellent standard library support for building RESTful APIs
+* **PostgreSQL** - Persistent storage for unit data and member rosters (planned for Phase 2)
+* **Docker** - Containerization for consistent deployment across environments
+
+**Planned Frontend (Phase 2)**
+* **React.js + TypeScript** - Component-based UI for dynamic unit page creation and editing
+* **Modern JavaScript ecosystem** - Build tooling and state management for fluid user interactions
+
+**Infrastructure**
+* Docker containerization with planned GCP/Kubernetes scaling
+* RESTful API design with comprehensive documentation for third-party integration
 
 ### 📍 Current Status: Phase 1 (View-Only)
 This is currently a showcase platform with manually curated content. User-generated unit creation will be available in Phase 2.
@@ -64,7 +79,10 @@ Then visit `http://localhost:8080` in your browser.
 
 ## 👀 What You'll See
 After running the server, visit `http://localhost:8080` to browse:
-- Pre-configured pages of the server 
+- Example unit pages showcasing organizational structure and member profiles
+- Sample unit emblems and visual identity system
+- RESTful API endpoints returning JSON data for unit information
+- Responsive HTML templates demonstrating the platform's presentation layer
 
 ## ⚙️ Usage
 
