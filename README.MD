@@ -1,7 +1,7 @@
 ![CI checks badge](https://github.com/justinmnge/unit_creator_fi/actions/workflows/ci.yml/badge.svg) &nbsp; ![CD checks badge](https://github.com/justinmnge/unit_creator_fi/actions/workflows/cd.yml/badge.svg)
 # Unit Creator 🏴‍☠️
 
-<img width="1912" height="908" alt="Image" src="https://github.com/user-attachments/assets/14049d29-0d06-41f7-aae1-419d91f6fb6c" />
+<img width="2557" height="1264" alt="Image" src="https://github.com/user-attachments/assets/8f4c463c-c477-48e1-9284-f781ba502431" />
 
 <!-- ABOUT THE PROJECT -->
 ## 📌 About this Project
@@ -13,9 +13,12 @@ Mil-Sim enthusiasts and tactical gaming units currently juggle Discord channels,
 
 ### What it does:
 * Enables communities to create custom unit pages with emblems, hierarchy, and member profiles
-* Provides a centralized platform for unit identity management across airsoft teams and tactical gaming groups
+* Provides a centralized platform for unit identity management across various tactical enthusiast groups
 * Stores unit organizational data, member rosters, and visual assets
-* Exposes RESTful JSON APIs for community integrations and future expansion
+* Demonstrates RESTful API design patterns with clean JSON endpoints
+
+### What This Demonstrates
+This project showcases full-stack development patterns for community management platforms. It explores how tactical gaming units could centralize their organizational identity, moving from scattered Discord channels and spreadsheets to a unified system with proper data modeling and API design.
 
 ## 🛠️ Built With
 
@@ -48,9 +51,9 @@ Mil-Sim enthusiasts and tactical gaming units currently juggle Discord channels,
 This is currently a showcase platform with manually curated content. User-generated unit creation will be available in Phase 2.
 
 ### 🛣️ Roadmap
-* Phase 1: Static JSON data with manual curation
-* Phase 2: Database-backed system with user-generated content
-* Phase 3: Real-time game server integration for live player statistics
+* **Phase 1** (Current): Static JSON data with manual curation - demonstrates platform concept and API structure
+* **Phase 2**: Database-backed system with user authentication, unit creation UI, and member management
+* **Phase 3**: Enhanced user experience with React frontend, advanced search/filtering, and unit comparison features
 
 ## ✅ Prerequisites
 
