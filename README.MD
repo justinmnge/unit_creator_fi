@@ -8,7 +8,7 @@
 
 Unit Creator FI is a web platform for milsim and tactical gaming communities to build authentic unit identities, manage rosters, and showcase organizational structure.
 
-What it does:
+### What it does:
 * Enables communities to create custom unit pages with emblems, hierarchy, and member profiles
 * Provides a centralized platform for unit identity management across airsoft teams and tactical gaming groups
 * Stores unit organizational data, member rosters, and visual assets
@@ -28,6 +28,9 @@ What it does:
 * Authentication: Secure player and unit data access controls
 * Deployment: Docker containerization with planned GCP/Kubernetes scaling
 * API Design: RESTful endpoints with comprehensive documentation for third-party integration
+
+## 📍 Current Status: Phase 1 (View-Only)
+This is currently a showcase platform with manually curated content. User-generated unit creation will be available in Phase 2.
 
 ## 🛣️ Roadmap
 * Phase 1: Static JSON data with manual curation
@@ -49,7 +52,7 @@ What it does:
 
 ## 📦 Installation
 
-### Option 1: Run Pre-built Docker Image (Quickest)
+### Run Pre-built Docker Image
 
 Pull and run the latest production image directly from Docker Hub:
 ```sh
@@ -59,18 +62,9 @@ docker run -p 8080:8080 justinmnge/unit_creator_fi:latest
 
 Then visit `http://localhost:8080` in your browser.
 
-### Option 2: Build from Source
-
-1. Clone the repo
-```sh
-   git clone https://github.com/justinmnge/unit_creator_fi.git
-   cd unit_creator_fi
-```
-2. Change git remote url to avoid accidental pushes to base project
-```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-```
+## 👀 What You'll See
+After running the server, visit `http://localhost:8080` to browse:
+- Pre-configured pages of the server 
 
 ## ⚙️ Usage
 
