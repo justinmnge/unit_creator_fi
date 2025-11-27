@@ -68,7 +68,7 @@ This is currently a showcase platform with manually curated content. User-genera
   docker compose version
 ```
 
-## 📦 Quickstart
+## 📦 Quick Start
 
 ### Run Pre-built Docker Image
 
