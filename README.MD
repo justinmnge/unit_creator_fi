@@ -68,7 +68,7 @@ This is currently a showcase platform with manually curated content. User-genera
   docker compose version
 ```
 
-## 📦 Quick Start
+## Quicktart
 
 ### Run Pre-built Docker Image
 
@@ -87,7 +87,7 @@ After running the server, visit `http://localhost:8080` to browse:
 - RESTful API endpoints returning JSON data for unit information
 - Responsive HTML templates demonstrating the platform's presentation layer
 
-## ⚙️ Usage
+## Usage
 
 * Run the server
 ```sh
@@ -121,7 +121,7 @@ After running the server, visit `http://localhost:8080` to browse:
   docker run -p 8080:8080 justinmnge/unit_creator_fi:COMMIT_SHA
 ```
 
-## 🤝 Contributing
+## Contributing
 
 ### Clone the repo
 ```bash
