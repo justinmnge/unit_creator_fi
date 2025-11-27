@@ -6,26 +6,33 @@
 <!-- ABOUT THE PROJECT -->
 ## 📌 About this Project
 
-The goal of this project is to build a comprehensive CRUD application that integrates with a game API to display real-time player and unit statistics, enabling Mil-Sim enthusiasts to create custom unit pages within a tactical gaming community.
+Unit Creator FI is a web platform for milsim and tactical gaming communities to build authentic unit identities, manage rosters, and showcase organizational structure.
 
-Key Objectives:
-* Build a production-grade HTTP server in Go
-* Integrate and transform external game API data into meaningful user experiences
-* Implement secure authentication and authorization for player and unit data
-* Design RESTful APIs using JSON for seamless communication between game API, backend, and frontend
-* Use Postgres with type-safe SQL to store unit emblems, organizational structures, and cached player data
-* Develop endpoints for unit emblem creation, customization, and hierarchy visualization
-* Document APIs to enable future expansion and integration
+What it does:
+* Enables communities to create custom unit pages with emblems, hierarchy, and member profiles
+* Provides a centralized platform for unit identity management across airsoft teams and tactical gaming groups
+* Stores unit organizational data, member rosters, and visual assets
+* Exposes RESTful JSON APIs for community integrations and future expansion
 
 ## 🛠️ Built With
 
-</h3>
 <p align="left">
  <a href="https://go.dev/"><img src="https://skillicons.dev/icons?i=go"></a>&nbsp;
 <img src="https://skillicons.dev/icons?i=html">&nbsp;
 <img src="https://github.com/user-attachments/assets/debd8e54-8d8a-4dc1-b900-0c778af06574" width="48" height="48"></a>&nbsp;
 <img src="https://skillicons.dev/icons?i=docker"></a>&nbsp;
  </p>
+
+## 🔧 Technical Stack
+* Backend: Go HTTP server with PostgreSQL for persistent storage
+* Authentication: Secure player and unit data access controls
+* Deployment: Docker containerization with planned GCP/Kubernetes scaling
+* API Design: RESTful endpoints with comprehensive documentation for third-party integration
+
+## 🛣️ Roadmap
+* Phase 1: Static JSON data with manual curation
+* Phase 2: Database-backed system with user-generated content
+* Phase 3: Real-time game server integration for live player statistics
 
 ## ✅ Prerequisites
 
