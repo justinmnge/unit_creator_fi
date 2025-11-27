@@ -8,6 +8,9 @@
 
 Unit Creator FI is a web platform for Mil-Sim and tactical gaming communities to build authentic unit identities, manage rosters, and showcase organizational structure.
 
+### The Problem It Solves
+Mil-Sim enthusiasts and tactical gaming units currently juggle Discord channels, Google Sheets, and forum posts to maintain their organizational identity. Unit Creator centralizes this into a single, professional platform with proper data persistence and a clean presentation layer.
+
 ### What it does:
 * Enables communities to create custom unit pages with emblems, hierarchy, and member profiles
 * Provides a centralized platform for unit identity management across various tactical enthusiast groups
@@ -41,8 +44,8 @@ This project showcases full-stack development patterns for community management 
 * **Modern JavaScript ecosystem** - Build tooling and state management for fluid user interactions
 
 **Infrastructure**
-* Docker containerization (production deployment uses similar patterns with cloud-native orchestration)
-* RESTful API design demonstrating Go's `net/http` patterns and JSON marshaling
+* Docker containerization with planned GCP/Kubernetes scaling
+* RESTful API design with comprehensive documentation for third-party integration
 
 ### 📍 Current Status: Phase 1 (View-Only)
 This is currently a showcase platform with manually curated content. User-generated unit creation will be available in Phase 2.
